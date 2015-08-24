@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>基础css - 快切</title>
+<meta name="keywords" content="快切,中文css框架,css框架,开源css框架,css框架下载"/>
+<meta name="description" content="快切是一个开源中文 (X)HTML/CSS 框架 ,它的目的是减少你的css开发时间。它提供一个可靠的css基础去创建你的项目,能够用于网站的快速设计,通过重设和重建浏览器标准，可以让每个网站防 止枯燥的跨浏览器兼容性测试。"/>
+<meta name="author" content="developer@qietu.com">
+<link rel="stylesheet" href="assets/css/quick.css">
+<link rel="stylesheet" href="assets/css/quick-rwd.css">
+<link rel="stylesheet" href="css/prettify.css" >
+<link rel="stylesheet" href="css/docs.css">
+<!--[if ie 6]>
+<link rel="stylesheet" href="assets/css/ie6.css">
+<![endif]-->
+<!--[if lt IE 9]>
+<script src="assets/js/html5.js"></script>
+<![endif]-->
+<script src="assets/js/jquery-1.7.1.min.js"></script>
+<script src="assets/js/quick.js"></script>
+<script src="js/prettify.js"></script>
+<script src="js/docs.js"></script>
+
+</head>
+<body>
+<div class="naver">
+  <div class="wrapper">
+    <div class="brand"> <a href="./index.html">快切</a> </div>
+    
+    <div class="module">
+      <ul>
+        <li> <a href="started.html">入门</a> </li>
+        <li> <a href="grid.html">12列栅格</a> </li>
+        <li> <a href="base.html" class="selected">基础css</a> </li>
+        <li> <a href="widgets.html">组件</a> </li>
+        <li> <a href="javascript.html">javascript插件</a> </li>
+                <li>
+                    <a href="icon.html">图标</a>                </li>
+      </ul>
+    </div>
+    <div class="sub"> <a href="http://kuai.qietu.com">前往官网</a> </div>
+  </div>
+</div>
+<div class="heading">
+  <div class="wrapper">
+    <h1>基础css</h1>
+    <h2>通过重置一些不兼容的css代码，能够避免一些不必要的跨浏览器兼容问题，定义了一些常用的css<br>
+      类，能够用于快速开发，也能统一网页的风格。</h2>
+  </div>
+</div>
+<div class="wrapper">
+
+
+	<div class="row">
+    	<div class="col3">
+        	<ul class="sidebar">
+            <li class="selected">
+            	<a href="#typography">排版</a>
+                <ul>
+                	<li class="selected"><a href="#paragraph">段落排版</a></li>
+                	<li><a href="#strong">加粗</a></li>
+                	<li><a href="#underline">下划线</a></li>
+                	<li><a href="#italic">斜体</a></li>
+                	<li><a href="#line-through">删除线</a></li>
+                	<li><a href="#sup">上标和下标</a></li>
+                	<li><a href="#big">文字加大，缩小</a></li>
+                	<li><a href="#blockquote">引用</a></li>
+                	<li><a href="#abbr">标签</a></li>
+                	<li><a href="#list">列表</a></li>
+                </ul>
+            </li>
+            <li><a href="#code">代码</a></li>
+            <li><a href="#table">表格</a></li>
+            <li><a href="#form">表单</a></li>
+            <li><a href="#button">按钮</a></li>
+            </ul>
+        </div>
+        <div class="col9">
+        
+       
+    
+           	<h1 id="typography">排版<small></small></h1>
+                <h4>默认设置,段落,标题,文本，对字体颜色，锚文本的下划线，颜色，字体做了重写，均采用了最符合中国网站体验的12号字体和 Verdana, Arial, Helvetica, sans-serif 字体。行距22px。这些重写参考了，盛大，腾讯，百度，新浪等众多网站对css重写的选择。</h4>
+                
+            <div class="docs">
+                    	<div class="docs-head">example</div>
+                   	 <div class="docs-body">
+                        	<!--demo-->
+                            <p>采用了符合中国人阅读习惯的font-size:12px像素字体，行距line-height:22px像素。字体font-family:Verdana,Arial,Helvetica,sans-serif, body背景background:white;</p>
+                            <p>级联样式表（Cascading Style Sheet）简称“CSS”，通常又称为“风格样式表（Style Sheet）”，它是用来进行网页风格设计的。比如，如果想让链接字未点击时是蓝色的，当鼠标移上去后字变成红色的且有下划线，这就是一种风格。通过设立样式表，可以统一地控制HTML中各标志的显示属性。</p>
+                            <!--//demo-->
+                </div>
+<div class="doc-foot">
+                        	<pre>&lt;p&gt;采用了符合中国人阅读习惯的font-size:12px像素字体，行距line-height:22px像素。字体font-family:Verdana,Arial,Helvetica,sans-serif, body背景background:white;&lt;/p&gt;</pre>
+                   </div>
+              </div>
+              
+              
+              <h2 id="paragraph">段落排版</h2>
+              <h4>h1~h6标签同strong标签一样在seo中具有提高文字权重的效果</h4>
+            <div class="docs">
+                    	<div class="docs-head">example</div>
+                    	<div class="docs-body">
+                        	<!--demo-->
+      <h1>我是h1标签，在seo中我拥有最高的权重</h1>
+      <h2>我是h2标签，在seo中我拥有仅次于h1标签的权重</h2>
+      <h3>我是h3标签，在seo中我拥有仅次于h1,h2标签的权重</h3>
+      <h4>我是h4标签，在seo中我拥有仅次于h1,h2,h3标签的权重</h4>
+      <h5>我是h5标签，在seo中我拥有仅次于h1,h2,h3,h4标签的权重</h5>
+                            <!--//demo-->
+                        </div>
+<div class="doc-foot">
+                        	<pre>&lt;h1&gt;我是h1标签，在seo中我拥有最高的权重&lt;/h1&gt;<br>&lt;h2&gt;我是h2标签，在seo中我拥有仅次于h1标签的权重&lt;/h2&gt;<br>&lt;h3&gt;我是h3标签，在seo中我拥有仅次于h1,h2标签的权重&lt;/h3&gt;<br>&lt;h4&gt;我是h4标签，在seo中我拥有仅次于h1,h2,h3标签的权重&lt;/h4&gt;<br>&lt;h5&gt;我是h5标签，在seo中我拥有仅次于h1,h2,h3,h4标签的权重&lt;/h5&gt;</pre>
+                      </div>
+              </div>
+              
+              <h2 id="strong">加粗</h2>
+              <h4>通过原生的&lt;strong&gt;&lt;/strong&gt;标签即可加粗,css加粗为font-weight:bold;&lt;strong&gt;...&lt;/strong&gt; &lt;b&gt;在w3c新标准中已经不建议使用了</h4>
+            <div class="docs">
+                    	<div class="docs-head">example</div>
+                    	<div class="docs-body">
+                        	<!--demo-->
+      <strong>这是一段加粗的文字</strong>
+                            <!--//demo-->
+                        </div>
+<div class="doc-foot">
+                        	<pre>&lt;strong&gt;这是一段加粗的文字&lt;/strong&gt;</pre>
+                     </div>
+              </div>
+              
+              <h2 id="underline">下划线</h2>
+              <h4>可以通过css的text-decoration:underline; 实现同样的效果</h4>
+            <div class="docs">
+                    	<div class="docs-head">example</div>
+                    	<div class="docs-body">
+                        	<!--demo-->
+      <u>这是一段下划线的文字</u>
+                            <!--//demo-->
+                        </div>
+<div class="doc-foot">
+                        	<pre>&lt;u&gt;这是一段下划线的文字&lt;/u&gt;</pre>
+                     </div>
+              </div>
+              
+              <h2 id="italic">斜体</h2>
+              <h4>可以通过css的font-style:italic;实现同样的效果，&lt;em&gt;...&lt;/em&gt; &lt;i&gt;在w3c新标准中已经不建议使用了</h4>
+            <div class="docs">
+                    	<div class="docs-head">example</div>
+                    	<div class="docs-body">
+                        	<!--demo-->
+      <em>这是一段斜体的文字</em>
+                            <!--//demo-->
+                        </div>
+<div class="doc-foot">
+                        	<pre>&lt;em&gt;这是一段斜体的文字&lt;/em&gt;</pre>
+                     </div>
+              </div>
+              
+              <h2 id="line-through">删除线</h2>
+              <h4>可以通过css的<code>text-decoration:line-through;</code>实现同样的效果</h4>
+            <div class="docs">
+                    	<div class="docs-head">example</div>
+                    	<div class="docs-body">
+                        	<!--demo-->
+      <del>这是一段删除线文字</del>
+                            <!--//demo-->
+                        </div>
+<div class="doc-foot">
+                        	<pre>&lt;del&gt;这是一段删除线文字&lt;/del&gt;</pre>
+                     </div>
+              </div>
+              
+              <h2 id="sup">上标和下标</h2>
+               <div class="docs">
+                    	<div class="docs-head">example</div>
+                    	<div class="docs-body">
+                        	 
+                        	  <!--demo-->
+                        	  <p>上标的文字在文字位于右上方显示<sup>这是一段上标文字</sup></p>
+                              <p>下标的文字在文字位于右下方显示<sup>这是一段下标文字</sup></p>
+                        	  <!--//demo-->
+                      	  
+                    	</div>
+                        <div class="doc-foot">
+                        	<pre>&lt;p&gt;上标的文字在文字位于右上方显示&lt;sup&gt;这是一段上标文字&lt;/sup&gt;&lt;/p&gt;<br>&lt;p&gt;下标的文字在文字位于右下方显示&lt;sup&gt;这是一段下标文字&lt;/sup&gt;&lt;/p&gt;</pre>
+                        </div>
+              </div>
+              
+              <h2 id="big">文字加大，缩小</h2>
+               <div class="docs">
+                    	<div class="docs-head">example</div>
+                    	<div class="docs-body">
+                        	<!--demo-->
+      <p><big>这是一段加大号文字</big></p>
+            <p><small>这是一段小号文字</small></p>
+                            <!--//demo-->
+                        </div>
+                        <div class="doc-foot">
+                        	<pre>&lt;p&gt;&lt;big&gt;这是一段加大号文字&lt;/big&gt;&lt;/p&gt;<br>&lt;p&gt;&lt;small&gt;这是一段小号文字&lt;/small&gt;&lt;/p&gt;</pre>
+                        </div>
+              </div>
+              
+              <h2 id="blockquote">引用</h2>
+  <h4>引用常常被用于评论中，在网页中非常常见，用<code>&lt;blockquote&gt;</code>就可以轻松实现一段美观的引用。</h4>
+              <div class="docs">
+                    	<div class="docs-head">xxxxxxx</div>
+                    	<div class="docs-body">
+                        	<!--demo-->
+      <blockquote>级联样式表（Cascading Style Sheet）简称“CSS”，通常又称为“风格样式表（Style Sheet）”，它是用来进行网页风格设计的。比如，如果想让链接字未点击时是蓝色的，当鼠标移上去后字变成红色的且有下划线，这就是一种风格。
+        <blockquote>通过设立样式表，可以统一地控制HTML中各标志的显示属性。级联样式表可以使人更能有效地控制网页外观。使用级联样式表，可以扩充精确指定网页元素位置，外观以及创建特殊效果的能力。</blockquote>
+      </blockquote>
+                            <!--//demo-->
+                        </div>
+                        <div class="doc-foot">
+                        	<pre>&lt;blockquote&gt;级联样式表（Cascading Style Sheet）简称“CSS”，通常又称为“风格样式表（Style Sheet）”，它是用来进行网页风格设计的。比如，如果想让链接字未点击时是蓝色的，当鼠标移上去后字变成红色的且有下划线，这就是一种风格。<br>        &lt;blockquote&gt;通过设立样式表，可以统一地控制HTML中各标志的显示属性。级联样式表可以使人更能有效地控制网页外观。使用级联样式表，可以扩充精确指定网页元素位置，外观以及创建特殊效果的能力。&lt;/blockquote&gt;<br>      &lt;/blockquote&gt;</pre>
+                        </div>
+              </div>
+              
+              
+              
+              <h2 id="abbr">abbr</h2>
+  <h4>标签常常用于关键字tag等地方，用<code>&lt;abbr&gt;</code>就可以轻松实现。</h4>
+              <div class="docs">
+                    	<div class="docs-head">xxxxxxx</div>
+                    	<div class="docs-body">
+                        	<!--demo-->
+      <abbr>css3</abbr> <abbr>html5</abbr>
+                            <!--//demo-->
+                        </div>
+                        <div class="doc-foot">
+                        	<pre>&lt;abbr&gt;css3&lt;/abbr&gt; &lt;abbr&gt;html5&lt;/abbr&gt;</pre>
+                        </div>
+              </div>
+              
+              
+              
+              <h2 id="list">列表</h2>
+              <h4>无序列表<code>ul</code></h4>
+            <div class="docs">
+                    	<div class="docs-head">example</div>
+                    	<div class="docs-body">
+                        	<!--demo-->
+      <ul>
+        <li>无序列表是这样表现的</li>
+        <li>无序列表是点点点</li>
+        <li>无序列表是没有罗马文字的</li>
+      </ul>
+                            <!--//demo-->
+                        </div>
+                        <div class="doc-foot">
+                        	<pre>&lt;ul&gt;<br>        &lt;li&gt;无序列表是这样表现的&lt;/li&gt;<br>        &lt;li&gt;无序列表是点点点&lt;/li&gt;<br>        &lt;li&gt;无序列表是没有罗马文字的&lt;/li&gt;<br>      &lt;/ul&gt;</pre>
+                        </div>
+            </div>
+            
+            
+            
+              <h2> 有序列表<code>ol</code></h2>
+            <div class="docs">
+                    	<div class="docs-head">example</div>
+                    	<div class="docs-body">
+                        	<!--demo-->
+      <ol>
+        <li>有序列表是这样表现的</li>
+        <li>有序列表不是是点点点</li>
+        <li>有序列表是有罗马文字的</li>
+      </ol>
+                            <!--//demo-->
+                        </div>
+                        <div class="doc-foot">
+                        	<pre>&lt;ol&gt;<br>        &lt;li&gt;有序列表是这样表现的&lt;/li&gt;<br>        &lt;li&gt;有序列表不是是点点点&lt;/li&gt;<br>        &lt;li&gt;有序列表是有罗马文字的&lt;/li&gt;<br>      &lt;/ol&gt;</pre>
+                        </div>
+            </div>
+            
+            
+            
+              <h2>没有样式的<code>&lt;ul class=&quot;unstyled&quot;&gt;</code></h2>
+            <div class="docs">
+                    	<div class="docs-head">example</div>
+                    	<div class="docs-body">
+                        	<!--demo-->
+      <ul class="unstyled">
+        <li>没有样式是这样表现的</li>
+        <li>没有样式的列表什么也没有</li>
+        <li>没有样式比较干净</li>
+      </ul>
+                            <!--//demo-->
+                        </div>
+                        <div class="doc-foot">
+                        	<pre>&lt;ul class=&quot;unstyled&quot;&gt;<br>        &lt;li&gt;没有样式是这样表现的&lt;/li&gt;<br>        &lt;li&gt;没有样式的列表什么也没有&lt;/li&gt;<br>        &lt;li&gt;没有样式比较干净&lt;/li&gt;<br>      &lt;/ul&gt;</pre>
+                        </div>
+            </div>
+            
+            
+            
+              <h2>圈圈<code>&lt;ul class=&quot;circle&quot;&gt;</code></h2>
+            <div class="docs">
+                    	<div class="docs-head">example</div>
+                    	<div class="docs-body">
+                        	<!--demo-->
+      <ul class="circle">
+        <li>圈圈列表是这样表现的</li>
+        <li>圈圈列表是圈圈的</li>
+        <li>圈圈列表跟点点很相似</li>
+      </ul>
+                            <!--//demo-->
+                        </div>
+                        <div class="doc-foot">
+                        	<pre>&lt;ul class=&quot;circle&quot;&gt;<br>        &lt;li&gt;圈圈列表是这样表现的&lt;/li&gt;<br>        &lt;li&gt;圈圈列表是圈圈的&lt;/li&gt;<br>        &lt;li&gt;圈圈列表跟点点很相似&lt;/li&gt;<br>      &lt;/ul&gt;</pre>
+                        </div>
+            </div>
+            
+            
+              <h2>方块<code>&lt;ul class=&quot;square&quot;&gt;</code></h2>
+            <div class="docs">
+                    	<div class="docs-head">example</div>
+                    	<div class="docs-body">
+                        	<!--demo-->
+      <ul class="square">
+        <li>圈圈列表是这样表现的</li>
+        <li>圈圈列表是圈圈的</li>
+        <li>圈圈列表跟点点很相似</li>
+      </ul>
+                            <!--//demo-->
+                        </div>
+                        <div class="doc-foot">
+                        	<pre>&lt;ul class=&quot;square&quot;&gt;<br>        &lt;li&gt;圈圈列表是这样表现的&lt;/li&gt;<br>        &lt;li&gt;圈圈列表是圈圈的&lt;/li&gt;<br>        &lt;li&gt;圈圈列表跟点点很相似&lt;/li&gt;<br>      &lt;/ul&gt;</pre>
+                        </div>
+            </div>
+            
+            
+              <h2>中文123<code>&lt;ul class=&quot;cjk&quot;&gt;</code></h2>
+            <div class="docs">
+                    	<div class="docs-head">example</div>
+                    	<div class="docs-body">
+                        	<!--demo-->
+      <ul class="cjk">
+        <li>中文123样式是这样表现的</li>
+        <li>中文123样式的列表什么也没有</li>
+        <li>中文123样式是用汉字一二三排序的</li>
+      </ul>
+                            <!--//demo-->
+                        </div>
+                        <div class="doc-foot">
+                        	<pre>&lt;ul class=&quot;cjk&quot;&gt;<br>        &lt;li&gt;中文123样式是这样表现的&lt;/li&gt;<br>        &lt;li&gt;中文123样式的列表什么也没有&lt;/li&gt;<br>        &lt;li&gt;中文123样式是用汉字一二三排序的&lt;/li&gt;<br>      &lt;/ul&gt;</pre>
+                        </div>
+            </div>
+            
+            <h1 id="code">代码<small>代码区间</small></h1>
+              <h2>一行代码</h2>
+            <div class="docs">
+                    	<div class="docs-head">example</div>
+                    	<div class="docs-body">
+                        	<!--demo-->
+      <pre>body{ background:white;}</pre>
+                            <!--//demo-->
+                        </div>
+                        <div class="doc-foot">
+                        	<pre>&lt;pre&gt;body{ background:white;}&lt;/pre&gt;</pre>
+                        </div>
+            </div>
+            
+            
+              <h2>多行代码</h2>
+            <div class="docs">
+                    	<div class="docs-head">example</div>
+                    	<div class="docs-body">
+                        	<!--demo-->
+      <pre><ol><li>body{</li><li>background:white;</li><li>font-size:13px;</li><li>line-height:22px;</li><li>}</li></ol>
+</pre>
+                            <!--//demo-->
+                        </div>
+                        <div class="doc-foot">
+                        	<pre>&lt;pre&gt;&lt;ol&gt;&lt;li&gt;body{&lt;/li&gt;&lt;li&gt;background:white;&lt;/li&gt;&lt;li&gt;font-size:13px;&lt;/li&gt;&lt;li&gt;line-height:22px;&lt;/li&gt;&lt;li&gt;}&lt;/li&gt;&lt;/ol&gt;&lt;/pre&gt;</pre>
+                        </div>
+            </div>
+            
+            <h1 id="table">表格<small>表格的表框，间距等进行了重写让table更美观</small></h1>
+            
+      <h2>带边框的表格<small>加上<code>class="table bordered"</code>即可实现带边框的表格</small></h2>
+            <div class="docs">
+                    	<div class="docs-head">example</div>
+                    	<div class="docs-body">
+                        	<!--demo-->
+      <table class="table table-bordered">
+ <tbody>
+  <tr>
+   <td>/</td>
+   <td>&nbsp;</td>
+   <td>&nbsp;</td>
+  </tr>
+ </tbody>
+ <tbody>
+  <tr>
+   <td>&nbsp;</td>
+   <td>&nbsp;</td>
+   <td>&nbsp;</td>
+  </tr>
+ </tbody>
+ <tfoot>
+  <tr>
+   <td>&nbsp;</td>
+   <td>&nbsp;</td>
+   <td>&nbsp;</td>
+  </tr>
+ </tfoot>
+</table>
+                            <!--//demo-->
+                        </div>
+                        <div class="doc-foot">
+                        	<pre>&lt;table class=&quot;table table-bordered&quot;&gt;
+ &lt;tbody&gt;<br>  &lt;tr&gt;<br>   &lt;td&gt;/&lt;/td&gt;<br>   &lt;td&gt;&amp;nbsp;&lt;/td&gt;<br>   &lt;td&gt;&amp;nbsp;&lt;/td&gt;<br>  &lt;/tr&gt;
+ &lt;/tbody&gt;
+ &lt;tbody&gt;<br>  &lt;tr&gt;<br>   &lt;td&gt;&amp;nbsp;&lt;/td&gt;<br>   &lt;td&gt;&amp;nbsp;&lt;/td&gt;<br>   &lt;td&gt;&amp;nbsp;&lt;/td&gt;<br>  &lt;/tr&gt;
+ &lt;/tbody&gt;
+ &lt;tfoot&gt;<br>  &lt;tr&gt;<br>   &lt;td&gt;&amp;nbsp;&lt;/td&gt;<br>   &lt;td&gt;&amp;nbsp;&lt;/td&gt;<br>   &lt;td&gt;&amp;nbsp;&lt;/td&gt;<br>  &lt;/tr&gt;
+ &lt;/tfoot&gt;<br>&lt;/table&gt;</pre>
+                        </div>
+            </div>
+            
+            
+            <h2>斑马表格<small>加上<code>class="table zebra"</code>即可实现斑马表格</small></h2>
+            <div class="docs">
+                    	<div class="docs-head">example</div>
+                    	<div class="docs-body">
+                        	<!--demo-->
+      
+      <table width="100%" border="0" class="table zebra">
+        <tr>
+          <td>/</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+                            <!--//demo-->
+                        </div>
+                        <div class="doc-foot">
+                        	<pre>&lt;table width=&quot;100%&quot; border=&quot;0&quot; class=&quot;table zebra&quot;&gt;&lt;/table&gt;</pre>
+                        </div>
+            </div>
+            
+            <h1 id="form">表单</h1>
+             <h4>对文本框等进行了重写，通过美化一些表单元素默认样式，例如文本框，按钮，下拉菜单等，让表单更美观。通过placeholder属性来完成，文本框的默认值，鼠标点击消失，失去光标，默认值恢复的效果。（改效果在firefox浏览器下可见）</h4>
+            <div class="docs">
+                    	<div class="docs-head">example</div>
+                    	<div class="docs-body">
+                        	<!--demo-->
+      <form action="" method="get" enctype="multipart/form-data">
+        <fieldset>
+        <legend>注册表单</legend>
+        <div class="form-group">
+           <div class="form-icon">
+           	fadf
+           </div>
+          <label class="form-label">姓名 <small>字符在3~9位</small></label>
+          <div class="form-input">
+          	
+          </div>
+          <input name="" type="text" placeholder="请填写真实的姓名">
+          <input name="" type="text" placeholder="请填写真实的姓名" class="text radius">
+        </div>
+        <p>
+          <label>自我介绍：</label>
+          <textarea name="textarea" id="textarea" cols="45" rows="5"></textarea>
+        </p>
+        <p>
+          <label>爱好：</label>
+          <input type="checkbox" name="checkbox" id="checkbox">
+          踢球
+          <input type="checkbox" name="checkbox" id="checkbox">
+          上网
+          <input type="checkbox" name="checkbox" id="checkbox">
+          冲浪 </p>
+        <p>
+          <label>性别：</label>
+          <input type="radio" name="radio" id="radio" value="radio">
+          男
+          <input type="radio" name="radio" id="radio" value="radio">
+          女 </p>
+        <p>
+          <label>学历：</label>
+          <select name="select" id="select">
+            <option value="1">大学/大专</option>
+            <option value="2">高中/中专</option>
+            <option>小学</option>
+          </select>
+        </p>
+        <p>
+          <label>文件域：</label>
+          <input type="file" name="fileField" id="fileField">
+        </p>
+        <p>
+          <label></label>
+          <input name="" type="submit" class="button blue" value="提交">
+          <input name="重置" type="reset" class="button" value="重置">
+        </p>
+        </fieldset>
+      </form>
+                            <!--//demo-->
+                        </div>
+                        <div class="doc-foot">
+                        	<pre>&lt;form action=&quot;&quot; method=&quot;get&quot; enctype=&quot;multipart/form-data&quot;&gt;<br>        &lt;fieldset&gt;<br>        &lt;legend&gt;注册表单&lt;/legend&gt;<br>        &lt;p&gt;<br>          &lt;label&gt;姓名 &lt;small&gt;字符在3~9位&lt;/small&gt;&lt;/label&gt;<br>          &lt;input name=&quot;&quot; type=&quot;text&quot; placeholder=&quot;请填写真实的姓名&quot;&gt;<br>          &lt;input name=&quot;&quot; type=&quot;text&quot; placeholder=&quot;请填写真实的姓名&quot; class=&quot;text radius&quot;&gt;<br>        &lt;/p&gt;<br>        &lt;p&gt;<br>          &lt;label&gt;自我介绍：&lt;/label&gt;<br>          &lt;textarea name=&quot;textarea&quot; id=&quot;textarea&quot; cols=&quot;45&quot; rows=&quot;5&quot;&gt;&lt;/textarea&gt;<br>        &lt;/p&gt;<br>        &lt;p&gt;<br>          &lt;label&gt;爱好：&lt;/label&gt;<br>          &lt;input type=&quot;checkbox&quot; name=&quot;checkbox&quot; id=&quot;checkbox&quot;&gt;<br>          踢球<br>          &lt;input type=&quot;checkbox&quot; name=&quot;checkbox&quot; id=&quot;checkbox&quot;&gt;<br>          上网<br>          &lt;input type=&quot;checkbox&quot; name=&quot;checkbox&quot; id=&quot;checkbox&quot;&gt;<br>          冲浪 &lt;/p&gt;<br>        &lt;p&gt;<br>          &lt;label&gt;性别：&lt;/label&gt;<br>          &lt;input type=&quot;radio&quot; name=&quot;radio&quot; id=&quot;radio&quot; value=&quot;radio&quot;&gt;<br>          男<br>          &lt;input type=&quot;radio&quot; name=&quot;radio&quot; id=&quot;radio&quot; value=&quot;radio&quot;&gt;<br>          女 &lt;/p&gt;<br>        &lt;p&gt;<br>          &lt;label&gt;学历：&lt;/label&gt;<br>          &lt;select name=&quot;select&quot; id=&quot;select&quot;&gt;<br>            &lt;option value=&quot;1&quot;&gt;大学/大专&lt;/option&gt;<br>            &lt;option value=&quot;2&quot;&gt;高中/中专&lt;/option&gt;<br>            &lt;option&gt;小学&lt;/option&gt;<br>          &lt;/select&gt;<br>        &lt;/p&gt;<br>        &lt;p&gt;<br>          &lt;label&gt;文件域：&lt;/label&gt;<br>          &lt;input type=&quot;file&quot; name=&quot;fileField&quot; id=&quot;fileField&quot;&gt;<br>        &lt;/p&gt;<br>        &lt;p&gt;<br>          &lt;label&gt;&lt;/label&gt;<br>          &lt;input name=&quot;&quot; type=&quot;submit&quot; class=&quot;button blue&quot; value=&quot;提交&quot;&gt;<br>          &lt;input name=&quot;重置&quot; type=&quot;reset&quot; class=&quot;button&quot; value=&quot;重置&quot;&gt;<br>        &lt;/p&gt;<br>        &lt;/fieldset&gt;<br>      &lt;/form&gt;</pre>
+                        </div>
+            </div>
+            
+            
+              <h1 id="button">按钮</h1>
+              <h4>对按钮或者a标签按钮的样式重写,css3按钮是指通过css3来实现的按钮的效果，css3纯css可以实现立体，渐变，阴影，圆角等很多种特效，如果把这些属性通过各种不同的方式组合在一起就能实现很多不同的炫酷的按钮效果。 </h4>
+         
+                        	<!--demo-->
+      <table width="100%" border="0" class="table table-bordered">
+        <tr>
+          <td>演示</td>
+          <td>代码</td>
+          <td>功能</td>
+        </tr>
+        <tr>
+          <td><a href="#" class="button">默认</a></td>
+          <td><code>&lt;a class=&quot;button&quot;&gt;</code> 或者 <code>&lt;input type=&quot;button&quot; class=&quot;button&quot;&gt;</code></td>
+          <td>默认按钮</td>
+        </tr>
+        <tr>
+          <td><a href="#" class="button inverse">反向</a></td>
+          <td><code>&lt;a class=&quot;button inverse&quot;&gt;</code> 或者 <code>&lt;input type=&quot;button&quot; class=&quot;button inverse&quot;&gt;</code></td>
+          <td>反向按钮</td>
+        </tr>
+        <tr>
+          <td><a href="#" class="button black">黑色</a></td>
+          <td><code>&lt;a class=&quot;button black&quot;&gt;</code> 或者...</td>
+          <td>黑色的按钮</td>
+        </tr>
+        <tr>
+          <td><a href="#" class="button orange">橙色</a></td>
+          <td><code>&lt;a class=&quot;button orange&quot;&gt;</code> 或者...</td>
+          <td>橙色按钮</td>
+        </tr>
+        <tr>
+          <td><a href="#" class="button red">红色</a></td>
+          <td><code>&lt;a class=&quot;button red&quot;&gt;</code> 或者...</td>
+          <td>红色按钮</td>
+        </tr>
+        <tr>
+          <td><a href="#" class="button blue">蓝色</a></td>
+          <td><code>&lt;a class=&quot;button blue&quot;&gt;</code> 或者...</td>
+          <td>蓝色按钮</td>
+        </tr>
+        <tr>
+          <td><a href="#" class="button rosy">玫瑰红</a></td>
+          <td><code>&lt;a class=&quot;button rosy&quot;&gt;</code> 或者...</td>
+          <td>玫瑰红按钮</td>
+        </tr>
+        <tr>
+          <td><a href="#" class="button green">绿色</a></td>
+          <td><code>&lt;a class=&quot;button green&quot;&gt;</code> 或者...</td>
+          <td>绿色按钮</td>
+        </tr>
+        <tr>
+          <td><a href="#" class="button pink">粉红</a></td>
+          <td><code>&lt;a class=&quot;button pink&quot;&gt;</code> 或者...</td>
+          <td>粉红按钮</td>
+        </tr>
+        <tr>
+          <td><a href="#" class="button yellow">黄色</a></td>
+          <td><code>&lt;a class=&quot;button yellow&quot;&gt;</code> 或者...</td>
+          <td>黄色按钮</td>
+        </tr>
+        <tr>
+          <td><a href="#" class="button black bigrounded">圆角</a></td>
+          <td><code>&lt;a class=&quot;button black bigrounded&quot;&gt;</code> 或者...</td>
+          <td>圆角的按钮</td>
+        </tr>
+        <tr>
+          <td><a href="#" class="button black medium">适中号</a></td>
+          <td><code>&lt;a class=&quot;button black medium&quot;&gt;</code> 或者...</td>
+          <td>中等号按钮</td>
+        </tr>
+        <tr>
+          <td><a href="#" class="button black small">小号</a></td>
+          <td><code>&lt;a class=&quot;button black small&quot;&gt;</code> 或者...</td>
+          <td>小号按钮</td>
+        </tr>
+      </table>
+                            <!--//demo-->
+                      
+            
+            
+              <h2>颜色值</h2>
+            <div class="docs">
+                    	<div class="docs-head">example</div>
+                    	<div class="docs-body">
+                        	<!--demo-->
+      <p class="rgb-red">当我还是个小女孩，</p>
+      <p class="rgb-yellow">我问妈妈</p>
+      <p class="rgb-blue">将来我会变成什么样子呢？</p>
+      <p class="rgb-green">会漂亮吗？</p>
+      <p>会富有吗？</p>
+      <p>她对我说：</p>
+      <p>世事不可强求</p>
+      <p>顺其自然吧</p>
+                            <!--//demo-->
+                        </div>
+                        <div class="doc-foot">
+                        	<pre>&lt;p class=&quot;rgb-red&quot;&gt;当我还是个小女孩，&lt;/p&gt;<br>      &lt;p class=&quot;rgb-yellow&quot;&gt;我问妈妈&lt;/p&gt;<br>      &lt;p class=&quot;rgb-blue&quot;&gt;将来我会变成什么样子呢？&lt;/p&gt;<br>      &lt;p class=&quot;rgb-green&quot;&gt;会漂亮吗？&lt;/p&gt;<br>      &lt;p&gt;会富有吗？&lt;/p&gt;<br>      &lt;p&gt;她对我说：&lt;/p&gt;<br>      &lt;p&gt;世事不可强求&lt;/p&gt;<br>      &lt;p&gt;顺其自然吧&lt;/p&gt;</pre>
+                        </div>
+          </div>
+          
+          
+
+                    
+  
+  
+  
+         
+        </div>
+    </div>
+  
+</div>
+ 
+ 
+<div class="wrapper footer">
+  <p>&copy; CopyRight 2002-2013, 快切 kuai.qietu.com, Inc.All Rights Reserved.<br/>
+    代码基于<a href="http://www.apache.org/licenses/LICENSE-2.0" rel="nofollow" target="_blank">Apache License v2.0</a>, 文档基于创作共享的 <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/cn/" rel="nofollow" target="_blank">署名-非商业使用-相同方 式分享 2.5</a> 协议发布</p>
+</div>
+
+<!--浮动菜单-->
+<div class="absbar">
+	<ul>
+    	<li><a href="###">分享</a>
+        	<ul>
+            	<li><a href="http://weibo.com/qietuwang" target="_blank">微博</a></li>
+            	<li><a href="###">微信</a>
+                	<div class="qrcode">
+                    	<img src="imgs/getqrcode.jpg"/>
+                        <br/>请扫描关注快切微信
+                    </div>
+                </li>
+            </ul>
+        </li>
+    	<li><a href="http://koubei.baidu.com/s/kuai.qietu.com" target="_blank">点评</a></li>
+    	<li><a href="###"><i class="icon icon-chevron-up"></i></a></li>
+    	<li><a href="###"><i class="icon icon-chevron-down"></i></a></li>
+    </ul>
+</div>
+</body>
+</html>

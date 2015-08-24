@@ -1,597 +1,304 @@
-
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
-    <head>
-    	<!-- meta character set -->
-        <meta charset="utf-8">
-		<!-- Always force latest IE rendering engine or request Chrome Frame -->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>第一软件，云南第一的软件开发商</title>		
-		<!-- Meta Description -->
-        <meta name="description" content="第一软件、云南第一的软件开发商">
-        <meta name="keywords" content="云南建站，微信平台、APP、Androi、Ios、PC、软件定制">
-        <meta name="author" content="hiro100">
-		
-		<!-- Mobile Specific Meta -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-		
-		<!-- CSS
-		================================================== -->
-		
-		<link href='http://fonts.useso.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-		
-		<!-- Fontawesome Icon font -->
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-		<!-- bootstrap.min -->
-        <link rel="stylesheet" href="css/jquery.fancybox.css">
-		<!-- bootstrap.min -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-		<!-- bootstrap.min -->
-        <link rel="stylesheet" href="css/owl.carousel.css">
-		<!-- bootstrap.min -->
-        <link rel="stylesheet" href="css/slit-slider.css">
-		<!-- bootstrap.min -->
-        <link rel="stylesheet" href="css/animate.css">
-		<!-- Main Stylesheet -->
-        <link rel="stylesheet" href="css/main.css">
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>快切官网</title>
+<meta name="keywords" content="快切,中文css框架,css框架,开源css框架,css框架下载"/>
+<meta name="description" content="快切是一个开源中文 (X)HTML/CSS 框架 ,它的目的是减少你的css开发时间。它提供一个可靠的css基础去创建你的项目,能够用于网站的快速设计,通过重设和重建浏览器标准，可以让每个网站防 止枯燥的跨浏览器兼容性测试。下载：http://kuaiqie.qietu.com"/>
+<meta name="author" content="developer@qietu.com">
+<!--禁止图像工具栏出现的网页标签-->
+<meta content="no" http-equiv="imagetoolbar">
+<!--用于iphone开发-->
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<link type="image/x-icon" href="assets/ico/favicon.ico" rel="shortcut icon">
+<link rel="stylesheet" href="assets/css/quick.css">
+<link rel="stylesheet" href="assets/css/quick-rwd.css">
+<link rel="stylesheet" href="css/prettify.css" >
+<link rel="stylesheet" href="css/docs.css">
 
-		<!-- Modernizer Script for old Browsers -->
-        <script src="js/modernizr-2.6.2.min.js"></script>
+<!--针对ipad的横屏竖屏-->
+<!--<link rel="stylesheet" type="text/css" media="all and (orientation:portrait)" href="assets/css/portrait.css" />
+<link rel="stylesheet" type="text/css" media="all and (orientation:landscape)" href="assets/css/landscape.css" />-->
 
-    </head>
-	
-    <body id="body">
+<!--针对iphone的横屏竖屏,iPhone是通过屏幕最大宽度来侦测的-->
+<!--<link rel="stylesheet" media="screen and (max-width: 320px)" href="portrait.css" /> 
+<link rel="stylesheet" media="screen and (min-width: 321px)" href="landscape.css" />-->
 
-		<!-- preloader -->
-		<div id="preloader">
-            <div class="loder-box">
-            	<div class="battery"></div>
+<!--竖版本使用的样式-->
+<style media="all and (orientation:portrait)" type="text/css">
+.landscape { }
+</style>
+<!--横版本使用的样式-->
+<style media="all and (orientation:landscape)" type="text/css">
+.portrait { }
+</style>
+
+<!--[if lt IE 9]>
+<script src="assets/js/html5.js"></script>
+<![endif]-->
+
+<script src="assets/js/jquery-1.7.1.min.js"></script>
+<script src="assets/js/quick.js"></script> 
+<script src="js/prettify.js"></script>
+<script src="js/docs.js"></script> 
+
+<script>
+//js判断是否ipad浏览器
+ var ua = navigator.userAgent.toLowerCase();
+ var s;
+ s = ua.match(/iPad/i);
+
+ if(s=="ipad")
+ {
+  //return true; 
+  alert(1);
+ }
+ else{
+  //return false;
+ }
+ 
+ 
+</script>
+
+
+
+</head>
+
+<body>
+<!--<noscript><iframe src=*.html></iframe></noscript>--> <!--网页将不能被另存为-->
+<div class="naver">
+	<div class="wrapper">
+    	<div class="brand">
+        	<a href="./index.html">快切</a></div>
+    	<div class="module">
+        	<ul>
+                <li>
+                    <a href="started.html">入门</a>                </li>
+                <li>
+                    <a href="grid.html">12列栅格</a>                </li>
+                <li>
+                    <a href="base.html">基础css</a> 
+                </li>
+                <li>
+                    <a href="widgets.html">组件</a>                </li>
+                <li>
+                    <a href="javascript.html">javascript插件</a>                </li>
+                <li>
+                    <a href="icon.html">图标</a>                </li> 
+                   <li>
+                   		<a href="#">@快切css</a>
+                        	<ul>
+                            <li><a href="http://weibo.com/qietuwang" target="_blank">微博加关注</a></li>
+                            <li><a href="mailto:developer@qietu.com" target="_blank">发邮件给作者：developer@qietu.com</a></li>
+                        </ul>  
+                   </li>
+            </ul>
+        </div>
+        <div class="sub">
+        	<a href="http://miqie.qietu.com/?kuaiqie" target="_blank" title="切图网" class="button">移动框架</a>
+        	<a href="http://www.qietu.com/?kuaiqie" target="_blank" title="切图网" class="button button-inverse" style="border:#639c8f solid 1px !important; background:#fff !important; color:#639c8f !important;">前往官网</a>
+        </div>
+    </div>
+</div>
+
+<div class="docs-masthead">
+	<sup></sup>
+  <div class="wrapper">
+  	<div class="docs-logoicon">
+    	<span>Q</span>
+    </div>
+    <!--<h1>众多理由让您选择快切<small></small></h1>-->
+    <h2>快切css是一个开源中文 HTML5/CSS3 框架 ,支持跨平台移动浏览器兼容。<br/>兼容ie6,ie7,ie8,firefox,chrome浏览器以及iphone,ipad等移动设备。</h2>
+
+    <p>
+    <a href="http://pan.baidu.com/s/1kTotloN" target="_blank" class="button button-inverse " style="padding:15px 30px;  font-size:28px;">下载快切</a> 
+    </p>
+    <h4><span>当前utf8版本：v1.4</span>  <span>文档更新于：2015-07-12</span></h4>
+    
+     
+    <div class="show-pc">
+    <span class="docs-ads">
+    <script type="text/javascript">
+    /*kuaiqie_qietu_com*/
+    var cpro_id = "u2131425";
+</script>
+<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+
+    </span>
+    </div>
+    
+    <!--<div class="carbonad">
+    	<span class="carbonad-image"><a target="_blank" href="##"><img width="130" border="0" height="100" style="max-width:130px;" class="carbonad-image carbonad-img" src="imgs/16148.png"></a></span>
+        <span class="carbonad-text"><a href="##">我们提供优质经济的前端开发外包服务，拥有300多客户建立至今，超过1000多个项目，价格从优。</a></span>
+    </div>-->
+  </div>
+	<sub></sub>
+</div>
+
+<div class="partbar hide">
+	<div class="wrapper">QQ交流群：102254931<div class="arrow"></div></div>
+</div>
+
+<div class="docs-featurette">
+	<div class="wrapper">
+	<h1 class="docs-featurette-title">快切源于对细节的关注</h1>
+    <p class="lead">无论你是专业的web前端开发工程师，还是设计师，或者仅仅是一个爱好者，快切css框架都能够让您快速的建立一个标准美观的web网页。</p>
+    
+    <hr class="half-rule"/>
+	<div class="row">
+    	<div class="col4">
+        	<div class="col-padding">
+        	<img src="imgs/docs-github.png"/>
+   	  		<h2>栅格化系统</h2>
+          	<p>采用了12列格子技术，将网页平分成12列，可以满足多种布局的网页，为网页的多样性提供了便捷性，和灵活性。</p>
             </div>
-		</div>
-		<!-- end preloader -->
-
-        <!--
-        Fixed Navigation
-        ==================================== -->
-        <header id="navigation" class="navbar-inverse navbar-fixed-top animated-header">
-            <div class="container">
-                <div class="navbar-header">
-                    <!-- responsive nav button -->
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-                    </button>
-					<!-- /responsive nav button -->
-					
-					<!-- logo -->
-					<h1 class="navbar-brand">
-						<a href="#body">第一软件</a>
-					</h1>
-					<!-- /logo -->
-                </div>
-
-				<!-- main nav -->
-                <nav class="collapse navbar-collapse navbar-right" role="navigation">
-                    <ul id="nav" class="nav navbar-nav">
-                        <li><a href="#body">首页</a></li>
-                        <li><a href="#service">服务</a></li>
-                        <li><a href="#portfolio">产品</a></li>
-                        <li><a href="#testimonials">反馈</a></li>
-                        <li><a href="#price">价格</a></li>
-                        <li><a href="#contact">联系我们</a></li>
-                    </ul>
-                </nav>
-				<!-- /main nav -->
-				
+      </div>
+    	<div class="col4">
+        	<div class="col-padding">
+        	<img src="imgs/docs-responsive.png"/>
+        	<h2>响应式设计 </h2>
+          	<p>可以根据浏览器的大小自动缩放和调整，对web标签的重构实现了最大化的浏览器支持，避免了枯燥乏味的浏览器兼容调整的烦恼。</p>
             </div>
-        </header>
-        <!--
-        End Fixed Navigation
-        ==================================== -->
-		
-		<main class="site-content" role="main">
-		
-        <!--
-        Home Slider
-        ==================================== -->
-		
-		<section id="home-slider">
-            <div id="slider" class="sl-slider-wrapper">
+        </div>
+    	<div class="col4">
+        	<div class="col-padding">
+        	<img src="imgs/docs-widgets.png"/>
+        	<h2>jquery插件的支持</h2>
+            <p>编入了常用的jquery插件，iepng透明插件，选项卡插件，幻灯片插件，lazyload插件，并且测试了其跨浏览器的兼容性。</p>
+            </div>
+        </div>
+  </div>
+  
+  
+    <hr class="half-rule"/>
+    <p class="lead">快切css是国产的开源的html5响应式前端开发框架，托管在OSChina！</p>
+    
+    <a href="https://git.oschina.net/qietuwang/kuaiqie" target="_blank" class="button button-outline " style="padding:15px 30px;  font-size:28px;">在OSChina上查看</a> 
+ 
+</div>
+</div>
 
-				<div class="sl-slider">
-				
-					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
 
-						<div class="bg-img bg-img-1"></div>
+<div class="docs-featurette" id="faq">
+<div class="wrapper">
+	<h1 class="docs-featurette-title">更新日志</h1>
+    <p class="lead">我们正在不断的改进快切，以帮助大家更容易的制作响应式网页</p>
+    <hr class="half-rule">
+    
+    
+    <div class="timeline">
+    	<em></em>
+    	<ul>
+            	<li class="event">
+                	<label></label>
+                	<div class="thumb" style="background-image:url(imgs/darthvader.jpg);">
+                    	<span>5.30</span>
+                    </div>
+                    <div class="inner">
+                        <p>将gb2312编码改为了utf8编码，调整了若干细节，删除了框架用不到的css文件和js文件。
+</p>
+                    </div>
+                </li>
+            	<li class="event">
+                	<label></label>
+                	<div class="thumb" style="background-image:url(imgs/darthvader.jpg);">
+                    	<span>5.2</span>
+                    </div>
+                    <div class="inner">
+                        <p>推出sidebar侧边栏菜单网页组件。兼容ie6，ie7，ie8，ie9，ie10，firefox，chrome，safari，opera等浏览器。
+</p>
+                    </div>
+                </li>
+            	<li class="event">
+                	<label></label>
+                	<div class="thumb" style="background-image:url(imgs/darthvader.jpg);">
+                    	<span>7.10</span>
+                    </div>
+                    <div class="inner">
+                        <p>新增了计数器counter组件！
+更改了网站主色调为#698绿色，新增css3图片移上去放大类img-scale，修正了导航naver的响应式bug，增加了quick-rwd.css响应式文件，增加了时间轴组件timeline响应式效果；调整了数项细节。</p>
+                    </div>
+                </li>
+            </ul>
+         </div>   
+ 
+    <hr class="half-rule">
+   <p class="lead">我有能够帮助快切改进的建议</p>
+    <a style="padding:15px 30px;  font-size:28px;" class="button button-outline " href="http://wpa.qq.com/msgrd?v=3&uin=1379502713&site=qq&menu=yes" target="_blank">联系我们</a> 
+</div>
+</div>
 
-						<div class="slide-caption">
-                            <div class="caption-content">
-                                <h2 class="animated fadeInDown">BLUE Onepage HTML5 Template</h2>
-                                <span class="animated fadeInDown">Clean and Professional one page Template</span>
-                                <a href="#" class="btn btn-blue btn-effect">更多</a>
-                            </div>
-                        </div>
-						
-					</div>
-					
-					<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
-					
-						<div class="bg-img bg-img-2"></div>
-						<div class="slide-caption">
-                            <div class="caption-content">
-                                <h2>BLUE Onepage HTML5 Template</h2>
-                                <span>Clean and Professional one page Template</span>
-                                <a href="#" class="btn btn-blue btn-effect">更多</a>
-                            </div>
-                        </div>
-						
-					</div>
-					
-					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
-						
-						<div class="bg-img bg-img-3"></div>
-						<div class="slide-caption">
-                            <div class="caption-content">
-                                <h2>BLUE Onepage HTML5 Template</h2>
-                                <span>Clean and Professional one page Template</span>
-                                <a href="#" class="btn btn-blue btn-effect">更多</a>
-                            </div>
-                        </div>
 
-					</div>
+<div class="docs-featurette">
+<div class="wrapper">
+	<h1 class="docs-featurette-title">基于快切搭建的网站</h1>
+    <p class="lead">快切css框架被用于切图网前端开发项目建设中，目前已经累计300多客户使用了该框架，基于快切css框架开发的超过1000多个项目!</p>
+    <hr class="half-rule"/>
+	<div class="row">
+    	<div class="col4">
+        	<div class="col-padding">
+            <a href="#"><img src="imgs/lyft-thumb.jpg"/></a>
+            </div>
+        </div>
+    	<div class="col4">
+        	<div class="col-padding">
+            <a href="#"><img src="imgs/lyft-thumb.jpg"/></a>
+            </div>
+        </div>
+    	<div class="col4">
+        	<div class="col-padding">
+            <a href="#"><img src="imgs/lyft-thumb.jpg"/></a>
+            </div>
+        </div>
+  </div>
+    <hr class="half-rule"/>
+   <p class="lead">查看更多基于快切css搭建的网站实例。</p>
+    <a href="#t" class="button button-outline " style="padding:15px 30px;  font-size:28px;">查看更多案例</a> 
+</div>
+</div>
 
-				</div><!-- /sl-slider -->
 
-                <!-- 
-                <nav id="nav-arrows" class="nav-arrows">
-                    <span class="nav-arrow-prev">Previous</span>
-                    <span class="nav-arrow-next">Next</span>
-                </nav>
-                -->
-                
-                <nav id="nav-arrows" class="nav-arrows hidden-xs hidden-sm visible-md visible-lg">
-                    <a href="javascript:;" class="sl-prev">
-                        <i class="fa fa-angle-left fa-3x"></i>
-                    </a>
-                    <a href="javascript:;" class="sl-next">
-                        <i class="fa fa-angle-right fa-3x"></i>
-                    </a>
-                </nav>
-                
+<div class="docs-featurette">
+<div class="wrapper">
+	<h1 class="docs-featurette-title">与我们直接交流</h1>
+    <p class="lead">快切css增设了<a href="http://www.uyan.cc" target="_blank" rel="nofollow">友言</a>社会化评论系统，欢迎在这里给我们评论。</p>
+    
+    <hr class="half-rule"/>
+<!-- UY BEGIN -->
+<div id="uyan_frame"></div>
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2045006"></script>
+<!-- UY END -->
+</div>
+</div>
 
-				<nav id="nav-dots" class="nav-dots visible-xs visible-sm hidden-md hidden-lg">
-					<span class="nav-dot-current"></span>
-					<span></span>
-					<span></span>
-				</nav>
+<div class="wrapper footer">
+	<p>&copy; CopyRight 2002-2013, 快切 kuaiqie.qietu.com, Inc.All Rights Reserved.
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1255281778'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/stat.php%3Fid%3D1255281778' type='text/javascript'%3E%3C/script%3E"));</script>
+    
+    <br/>
+	代码基于<a href="http://www.apache.org/licenses/LICENSE-2.0" rel="nofollow" target="_blank">Apache License v2.0</a>, 文档基于创作共享的 <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/cn/" rel="nofollow" target="_blank">署名-非商业使用-相同方 式分享 2.5</a> 协议发布</p>
+</div>
 
-			</div><!-- /slider-wrapper -->
-		</section>
-		
-        <!--
-        End Home SliderEnd
-        ==================================== -->
-			
-			<!-- about section -->
-			<section id="about" >
-				<div class="container">
-					<div class="row">
-						<div class="col-md-4 wow animated fadeInLeft">
-							<div class="recent-works">
-								<h3>Recent Works</h3>
-								<div id="works">
-									<div class="work-item">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> <br> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-									</div>
-									<div class="work-item">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-									</div>
-									<div class="work-item">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-7 col-md-offset-1 wow animated fadeInRight">
-							<div class="welcome-block">
-								<h3>Welcome To Our Site</h3>								
-						     	 <div class="message-body">
-									<img src="img/member-1.jpg" class="pull-left" alt="member">
-						       		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-						     	 </div>
-						       	<a href="#" class="btn btn-border btn-effect pull-right">Read More</a>
-						    </div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- end about section -->
-			
-			
-			<!-- Service section -->
-			<section id="service">
-				<div class="container">
-					<div class="row">
-					
-						<div class="sec-title text-center">
-							<h2 class="wow animated bounceInLeft">Service</h2>
-							<p class="wow animated bounceInRight">The Key Features of our Job</p>
-						</div>
-						
-						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn">
-							<div class="service-item">
-								<div class="service-icon">
-									<i class="fa fa-home fa-3x"></i>
-								</div>
-								<h3>Support</h3>
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-							</div>
-						</div>
-					
-						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.3s">
-							<div class="service-item">
-								<div class="service-icon">
-									<i class="fa fa-tasks fa-3x"></i>
-								</div>
-								<h3>Well Documented</h3>
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-							</div>
-						</div>
-					
-						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.6s">
-							<div class="service-item">
-								<div class="service-icon">
-									<i class="fa fa-clock-o fa-3x"></i>
-								</div>
-								<h3>Design UI/UX</h3>
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-							</div>
-						</div>
-					
-						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.9s">
-							<div class="service-item">
-								<div class="service-icon">
-									<i class="fa fa-heart fa-3x"></i>
-								</div>
-								
-								<h3>Web Security</h3>
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>							
-							</div>
-						</div>
-						
-					</div>
-				</div>
-			</section>
-			<!-- end Service section -->
-			
-			<!-- portfolio section -->
-			<section id="portfolio">
-				<div class="container">
-					<div class="row">
-					
-						<div class="sec-title text-center wow animated fadeInDown">
-							<h2>FEATURED PROJECTS</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						</div>
-						
-
-						<ul class="project-wrapper wow animated fadeInUp">
-							<li class="portfolio-item">
-								<img src="img/portfolio/item.jpg" class="img-responsive" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat">
-								<figcaption class="mask">
-									<h3>Wall street</h3>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. </p>
-								</figcaption>
-								<ul class="external">
-									<li><a class="fancybox" title="Araund The world" data-fancybox-group="works" href="img/portfolio/item.jpg"><i class="fa fa-search"></i></a></li>
-									<li><a href=""><i class="fa fa-link"></i></a></li>
-								</ul>
-							</li>
-							
-							<li class="portfolio-item">
-								<img src="img/portfolio/item2.jpg" class="img-responsive" alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. ">
-								<figcaption class="mask">
-									<h3>Wall street</h3>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. </p>
-								</figcaption>
-								<ul class="external">
-									<li><a class="fancybox" title="Wall street" href="img/slider/banner.jpg" data-fancybox-group="works" ><i class="fa fa-search"></i></a></li>
-									<li><a href=""><i class="fa fa-link"></i></a></li>
-								</ul>
-							</li>
-							
-							<li class="portfolio-item">
-								<img src="img/portfolio/item3.jpg" class="img-responsive" alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. ">
-								<figcaption class="mask">
-									<h3>Wall street</h3>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. </p>
-								</figcaption>
-								<ul class="external">
-									<li><a class="fancybox" title="Behind The world" data-fancybox-group="works" href="img/portfolio/item3.jpg"><i class="fa fa-search"></i></a></li>
-									<li><a href=""><i class="fa fa-link"></i></a></li>
-								</ul>
-							</li>
-							
-							<li class="portfolio-item">
-								<img src="img/portfolio/item4.jpg" class="img-responsive" alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry.">
-								<figcaption class="mask">
-									<h3>Wall street</h3>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. </p>
-								</figcaption>
-								<ul class="external">
-									<li><a class="fancybox" title="Wall street 4" data-fancybox-group="works" href="img/portfolio/item4.jpg"><i class="fa fa-search"></i></a></li>
-									<li><a href=""><i class="fa fa-link"></i></a></li>
-								</ul>
-							</li>
-							
-							<li class="portfolio-item">
-								<img src="img/portfolio/item5.jpg" class="img-responsive" alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. ">
-								<figcaption class="mask">
-									<h3>Wall street</h3>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. </p>
-								</figcaption>
-								<ul class="external">
-									<li><a class="fancybox" title="Wall street 5" data-fancybox-group="works" href="img/portfolio/item5.jpg"><i class="fa fa-search"></i></a></li>
-									<li><a href=""><i class="fa fa-link"></i></a></li>
-								</ul>
-							</li>
-							
-							<li class="portfolio-item">
-								<img src="img/portfolio/item6.jpg" class="img-responsive" alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. ">
-								<figcaption class="mask">
-									<h3>Wall street</h3>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. </p>
-								</figcaption>
-								<ul class="external">
-									<li><a class="fancybox" title="Wall street 6" data-fancybox-group="works" href="img/portfolio/item6.jpg"><i class="fa fa-search"></i></a></li>
-									<li><a href=""><i class="fa fa-link"></i></a></li>
-								</ul>
-							</li>
-						</ul>
-						
-					</div>
-				</div>
-			</section>
-			<!-- end portfolio section -->
-			
-			<!-- Testimonial section -->
-			<section id="testimonials" class="parallax">
-				<div class="overlay">
-					<div class="container">
-						<div class="row">
-						
-							<div class="sec-title text-center white wow animated fadeInDown">
-								<h2>What people say</h2>
-							</div>
-							
-							<div id="testimonial" class=" wow animated fadeInUp">
-								<div class="testimonial-item text-center">
-									<img src="img/member-1.jpg" alt="Our Clients">
-									<div class="clearfix">
-										<span>Katty Flower</span>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-									</div>
-								</div>
-								<div class="testimonial-item text-center">
-									<img src="img/member-1.jpg" alt="Our Clients">
-									<div class="clearfix">
-										<span>Katty Flower</span>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-									</div>
-								</div>
-								<div class="testimonial-item text-center">
-									<img src="img/member-1.jpg" alt="Our Clients">
-									<div class="clearfix">
-										<span>Katty Flower</span>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-									</div>
-								</div>
-							</div>
-						
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- end Testimonial section -->
-			
-			<!-- Price section -->
-			<section id="price">
-				<div class="container">
-					<div class="row">
-					
-						<div class="sec-title text-center wow animated fadeInDown">
-							<h2>Price</h2>
-							<p>Our price for your company</p>
-						</div>
-						
-						<div class="col-md-4 wow animated fadeInUp">
-							<div class="price-table text-center">
-								<span>Silver</span>
-								<div class="value">
-									<span>$</span>
-									<span>24,35</span><br>
-									<span>month</span>
-								</div>
-								<ul>
-									<li>No Bonus Points</li>
-									<li>No Bonus Points</li>
-									<li>No Bonus Points</li>
-									<li>No Bonus Points</li>
-									<li><a href="#">sign up</a></li>
-								</ul>
-							</div>
-						</div>
-						
-						<div class="col-md-4 wow animated fadeInUp" data-wow-delay="0.4s">
-							<div class="price-table featured text-center">
-								<span>Gold</span>
-								<div class="value">
-									<span>$</span>
-									<span>50,00</span><br>
-									<span>month</span>
-								</div>
-								<ul>
-									<li>Free Trial</li>
-									<li>Free Trial</li>
-									<li>Free Trial</li>
-									<li>Free Trial</li>
-									<li><a href="#">sign up</a></li>
-								</ul>
-							</div>
-						</div>
-						
-						<div class="col-md-4 wow animated fadeInUp" data-wow-delay="0.8s">
-							<div class="price-table text-center">
-								<span>Diamond</span>
-								<div class="value">
-									<span>$</span>
-									<span>123,12</span><br>
-									<span>month</span>
-								</div>
-								<ul>
-									<li>All Bonus Points</li>
-									<li>All Bonus Points</li>
-									<li>All Bonus Points</li>
-									<li>All Bonus Points</li>
-									<li><a href="#">sign up</a></li>
-								</ul>
-							</div>
-						</div>
-		
-					</div>
-				</div>
-			</section>
-			<!-- end Price section -->
-			
-			<!-- Social section -->
-			<section id="social" class="parallax">
-				<div class="overlay">
-					<div class="container">
-						<div class="row">
-						
-							<div class="sec-title text-center white wow animated fadeInDown">
-								<h2>FOLLOW US</h2>
-								<p>Beautifully simple follow buttons to help you get followers on</p>
-							</div>
-							
-							<ul class="social-button">
-								<li class="wow animated zoomIn"><a href="#"><i class="fa fa-thumbs-up fa-2x"></i></a></li>
-								<li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
-								<li class="wow animated zoomIn" data-wow-delay="0.6s"><a href="#"><i class="fa fa-dribbble fa-2x"></i></a></li>							
-							</ul>
-							
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- end Social section -->
-			
-			<!-- Contact section -->
-			<section id="contact" >
-				<div class="container">
-					<div class="row">
-						
-						<div class="sec-title text-center wow animated fadeInDown">
-							<h2>Contact</h2>
-							<p>Leave a Message</p>
-						</div>
-						
-						
-						<div class="col-md-7 contact-form wow animated fadeInLeft">
-							<form action="#" method="post">
-								<div class="input-field">
-									<input type="text" name="name" class="form-control" placeholder="Your Name...">
-								</div>
-								<div class="input-field">
-									<input type="email" name="email" class="form-control" placeholder="Your Email...">
-								</div>
-								<div class="input-field">
-									<input type="text" name="subject" class="form-control" placeholder="Subject...">
-								</div>
-								<div class="input-field">
-									<textarea name="message" class="form-control" placeholder="Messages..."></textarea>
-								</div>
-						       	<button type="submit" id="submit" class="btn btn-blue btn-effect">Send</button>
-							</form>
-						</div>
-						
-						<div class="col-md-5 wow animated fadeInRight">
-							<address class="contact-details">
-								<h3>Contact Us</h3>						
-								<p><i class="fa fa-pencil"></i>Phoenix Inc.<span>PO Box 345678</span> <span>Little Lonsdale St, Melbourne </span><span>Australia</span></p><br>
-								<p><i class="fa fa-phone"></i>Phone: (415) 124-5678 </p>
-								<p><i class="fa fa-envelope"></i>website@yourname.com</p>
-							</address>
-						</div>
-			
-					</div>
-				</div>
-			</section>
-			<!-- end Contact section -->
-			
-			<section id="google-map">
-				<div id="map-canvas" class="wow animated fadeInUp"></div>
-			</section>
-		
-		</main>
-		
-		<footer id="footer">
-			<div class="container">
-				<div class="row text-center">
-					<div class="footer-content">
-						<div class="wow animated fadeInDown">
-							<p>newsletter signup</p>
-							<p>Get Cool Stuff! We hate spam!</p>
-						</div>
-						<form action="#" method="post" class="subscribe-form wow animated fadeInUp">
-							<div class="input-field">
-								<input type="email" class="subscribe form-control" placeholder="Enter Your Email...">
-								<button type="submit" class="submit-icon">
-									<i class="fa fa-paper-plane fa-lg"></i>
-								</button>
-							</div>
-						</form>
-						<div class="footer-social">
-							<ul>
-								<li class="wow animated zoomIn"><a href="#"><i class="fa fa-thumbs-up fa-3x"></i></a></li>
-								<li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="#"><i class="fa fa-twitter fa-3x"></i></a></li>
-								<li class="wow animated zoomIn" data-wow-delay="0.6s"><a href="#"><i class="fa fa-skype fa-3x"></i></a></li>
-								<li class="wow animated zoomIn" data-wow-delay="0.9s"><a href="#"><i class="fa fa-dribbble fa-3x"></i></a></li>
-								<li class="wow animated zoomIn" data-wow-delay="1.2s"><a href="#"><i class="fa fa-youtube fa-3x"></i></a></li>
-							</ul>
-						</div>
-						
-						<p>Copyright &copy; 2014-2015 Design and Developed By<a href="http://www.themefisher.com">Themefisher</a> </p>
-					</div>
-				</div>
-			</div>
-		</footer>
-		
-		<!-- Essential jQuery Plugins
-		================================================== -->
-		<!-- Main jQuery -->
-        <script src="js/jquery-1.11.1.min.js"></script>
-		<!-- Twitter Bootstrap -->
-        <script src="js/bootstrap.min.js"></script>
-		<!-- Single Page Nav -->
-        <script src="js/jquery.singlePageNav.min.js"></script>
-		<!-- jquery.fancybox.pack -->
-        <script src="js/jquery.fancybox.pack.js"></script>
-		<!-- Owl Carousel -->
-        <script src="js/owl.carousel.min.js"></script>
-        <!-- jquery easing -->
-        <script src="js/jquery.easing.min.js"></script>
-        <!-- Fullscreen slider -->
-        <script src="js/jquery.slitslider.js"></script>
-        <script src="js/jquery.ba-cond.min.js"></script>
-		<!-- onscroll animation -->
-        <script src="js/wow.min.js"></script>
-		<!-- Custom Functions -->
-        <script src="js/main.js"></script>
-    </body>
+<!--浮动菜单-->
+<div class="absbar" style="display:none;">
+	<ul>
+    	<li><a href="###">分享</a>
+        	<ul>
+            	<li><a href="http://weibo.com/qietuwang" target="_blank">微博</a></li>
+            	<li><a href="###">微信</a>
+                	<div class="qrcode">
+                    	<img src="imgs/getqrcode.jpg"/>
+                        <br/>请扫描关注快切微信
+                    </div>
+                </li>
+            </ul>
+        </li>
+    	<li><a href="http://koubei.baidu.com/s/kuai.qietu.com" target="_blank">点评</a></li>
+    	<li><a href="###" class="up"><i class="icon icon-chevron-up"></i></a></li>
+    	<li><a href="###" class="down"><i class="icon icon-chevron-down"></i></a></li>
+    </ul>
+</div>
+</body>
 </html>
+
