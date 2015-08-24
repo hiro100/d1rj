@@ -1,46 +1,97 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=7" />
-        <title>第一软件，云南一流的软件提供商</title>
-        <meta content="width=device-width,initial-scale=1" name="viewport">
-        <meta name="uyan_auth" content="e8bbbfb0a0" />
-        <link rel="stylesheet" href="assets/css/quick.css">
-        <!--[if lt IE 9]>
-        <script src="assets/js/html5.js"></script>
-        <![endif]-->
-        <script src="assets/js/jquery-1.7.1.min.js"></script> 
-        <script src="assets/js/quick.js"></script> 
-        <script>
-            var _hmt = _hmt || [];
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>第一软件，云南一流的软件提供商</title>
+<meta name="keywords" content="第一软件，云南一流的软件提供商"/>
+<meta name="description" content="提供触屏、APP、微信平台、PC端，四位一体的软件个性化定制服务"/>
+<meta name="author" content="i_hiro@163.com">
+<!--禁止图像工具栏出现的网页标签-->
+<meta content="no" http-equiv="imagetoolbar">
+<!--用于iphone开发-->
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<link type="image/x-icon" href="assets/ico/favicon.ico" rel="shortcut icon">
+<link rel="stylesheet" href="assets/css/quick.css">
+<link rel="stylesheet" href="assets/css/quick-rwd.css">
+<link rel="stylesheet" href="css/prettify.css" >
+<link rel="stylesheet" href="css/docs.css">
+
+<!--针对ipad的横屏竖屏-->
+<!--<link rel="stylesheet" type="text/css" media="all and (orientation:portrait)" href="assets/css/portrait.css" />
+<link rel="stylesheet" type="text/css" media="all and (orientation:landscape)" href="assets/css/landscape.css" />-->
+
+<!--针对iphone的横屏竖屏,iPhone是通过屏幕最大宽度来侦测的-->
+<!--<link rel="stylesheet" media="screen and (max-width: 320px)" href="portrait.css" /> 
+<link rel="stylesheet" media="screen and (min-width: 321px)" href="landscape.css" />-->
+
+<!--竖版本使用的样式-->
+<style media="all and (orientation:portrait)" type="text/css">
+.landscape { }
+</style>
+<!--横版本使用的样式-->
+<style media="all and (orientation:landscape)" type="text/css">
+.portrait { }
+</style>
+
+<!--[if lt IE 9]>
+<script src="assets/js/html5.js"></script>
+<![endif]-->
+
+<script src="assets/js/jquery-1.7.1.min.js"></script>
+<script src="assets/js/quick.js"></script> 
+<script src="js/prettify.js"></script>
+<script src="js/docs.js"></script> 
+
+<script>
+//js判断是否ipad浏览器
+ var ua = navigator.userAgent.toLowerCase();
+ var s;
+ s = ua.match(/iPad/i);
+
+ if(s=="ipad")
+ {
+  //return true; 
+  alert(1);
+ }
+ else{
+  //return false;
+ }
+ 
+    var _hmt = _hmt || [];
             (function () {
                 var hm = document.createElement("script");
                 hm.src = "//hm.baidu.com/hm.js?1fc69212dcc3d60766c146f32dfea7dd";
                 var s = document.getElementsByTagName("script")[0];
                 s.parentNode.insertBefore(hm, s);
             })();
-        </script>
+ 
+ 
+</script>
 
-    </head>	
-    <body>
-        <div class="naver">
-            <div class="wrapper">
-                <div class="brand">
-                    <a href="./index.html">第一软件</a></div>
-                <div class="module">
-                    <ul>
-                        <li class="">
-                            <a href="#">服务</a>                </li>
-                        <li class="">
-                            <a href="#">产品</a>                </li>
-                        <li>
-                            <a href="#">联系我们</a>                </li>
+
+
+</head>
+
+<body>
+<!--<noscript><iframe src=*.html></iframe></noscript>--> <!--网页将不能被另存为-->
+
+<div class="naver">
+	<div class="wrapper">
+    	<div class="brand">
+        	<a href="./">第一软件</a></div>
+    	<div class="module">
+        	<ul>
+                         <li class="select"><a href="./">首页</a></li>
+                        <li class=""><a href="./">服务</a></li>
+                        <li class=""><a href="./">产品</a></li>
+                        <li><a href="#">联系我们</a></li>
                     </ul>
-                </div>
-            </div>
         </div>
-        <div class="heading bg-blue bg-inverse padding-small">
+    </div>
+</div>
+
+<div class="heading bg-blue bg-inverse padding-small">
             <h1>第一软件，云南一流的软件提供商</h1>
             <div class="lead">提供触屏、APP、微信平台、PC端，四位一体的软件个性化定制服务</div>
             <div class="social">抱歉，网站正在建设当中敬请期待……</div>
@@ -50,8 +101,10 @@
         <div id="uyan_frame"></div>
         <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2056109"></script>
         <!-- UY END -->
-        <div class="footer">
-            技术支持：第一软件
-        </div>
-    </body>
+
+<div class="wrapper footer">
+	<p>&copy; CopyRight 2000-2015, 第一软件
+</div>
+</body>
 </html>
+
